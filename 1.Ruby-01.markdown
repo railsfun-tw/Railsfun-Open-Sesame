@@ -9,7 +9,7 @@
 
 安裝方式請參考官方網站教學，安裝完後您需要登出再登入使用者後 RVM 安裝上去的環境變數才會生效，我們才可以直接於終端機中直接執行 `rvm` 、`ruby`、`gem` 等命令
 
-### （建議）安裝 [Awesome Print](https://github.com/michaeldv/awesome_print)
+### 安裝 [Awesome Print](https://github.com/michaeldv/awesome_print)（建議）
 Awesome Print 是一個可以將 Ruby 物件用美觀的方式印出的程式庫，安裝完後於程式中執行 `require "awesome_print"` 即可以用 ap() 來取代 puts() 或 pp() 印出任何 Ruby 物件。
 
 `````
