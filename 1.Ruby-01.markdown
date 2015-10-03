@@ -12,7 +12,7 @@
 ### 安裝 [Awesome Print](https://github.com/michaeldv/awesome_print)（建議）
 Awesome Print 是一個可以將 Ruby 物件用美觀的方式印出的程式庫，安裝完後於程式中執行 `require "awesome_print"` 即可以用 ap() 來取代 puts() 或 pp() 印出任何 Ruby 物件。
 
-`````
+`````ruby
 > puts [1, 3, 2, [2, 3]]
 1
 3
