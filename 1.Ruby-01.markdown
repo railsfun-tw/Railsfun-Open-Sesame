@@ -36,7 +36,7 @@ Awesome Print 是一個可以將 Ruby 物件用美觀的方式印出的程式庫
 
 執行下列命令即可安裝 Awesome Print：
 `````
-$ gem install awesome_print
+? gem install awesome_print
 `````
 
 ## 1. {irb} 開宗明義
