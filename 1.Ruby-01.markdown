@@ -1,7 +1,6 @@
 # Ruby-01 
 ## 0. 準備環境
-### 安裝 Ruby
-#### 透過 [Ruby Version Manager (RVM)](https://rvm.io/)（建議）
+### 透過 [Ruby Version Manager (RVM)](https://rvm.io/) 安裝 Ruby（本教學僅支援此安裝方式安裝的 Ruby）
 雖然說安裝 Ruby 有很多種方式，不過使用 Ruby Version Manager (RVM) 來安裝 Ruby（以及之後會用到的 Rails）有下列好處：
 
 * 可以選擇想要安裝的版本
