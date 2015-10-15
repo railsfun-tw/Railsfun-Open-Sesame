@@ -1,2 +1,2 @@
-「[Railsfun 社群](http://railsfun.tw)」持有本智慧財產之權利  
-本智慧財產以 [Creative Commons **<span class="important_warning" style="color: red">姓名標示</span>**-**<span class="important_warning" style="color: red">相同方式分享</span>**第 3.0 版或其任意更近期版本](https://creativecommons.org/licenses/by-sa/3.0/tw/)授權條款釋出
+「[Railsfun 社群](http://railsfun.tw)」持有本智慧財產之所有權利。  
+本智慧財產以 [Do What The Fuck You Want To Public License (WTFPL) 授權條款](http://www.wtfpl.net/about/)釋出供所有人自由使用。
