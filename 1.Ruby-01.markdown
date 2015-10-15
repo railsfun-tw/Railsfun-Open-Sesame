@@ -1,3 +1,6 @@
+{% extends "Page design/Inner page.template.markdown" %}
+
+{% block page_content %}
 # Ruby-01 
 ## 0. 準備環境
 ### 透過 [Ruby Version Manager (RVM)](https://rvm.io/) 安裝 Ruby（本教學僅支援此安裝方式安裝的 Ruby）
@@ -52,3 +55,5 @@ ap nil.class #=> NilClass
 #任何東西都可以這樣用
 `````
 
+
+{% endblock %}
