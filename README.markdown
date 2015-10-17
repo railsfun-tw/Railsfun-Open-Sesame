@@ -1,7 +1,5 @@
 # RailsFun! 芝麻開門！<br />RailsFun! Open Sesame!
 <https://www.gitbook.com/book/railsfun/railsfun-open-sesame>  
-![《RailsFun! 芝麻開門！》封面圖案](cover_middle.jpg)
-
 這是由Ｖ字龍所發起的非官方的 RailsFun 教學課程的 [GitBook](https://www.gitbook.com) 講義，[RailsFun](http://railsfun.tw) 為由 JokerCatz 發起的 RubyOnRails 社群。
 
 ## 智慧財產授權條款<br />Intellectual Property License
