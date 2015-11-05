@@ -5,6 +5,6 @@
 	"variables": {
 		"title" : "RailsFun! 芝麻開門！", 
 		"project_url" : "https://www.gitbook.com/book/railsfun/railsfun-open-sesame"
-	}
-	"plugins" : ["toc"], 
+	}, 
+	"plugins" : ["toc"]
 }
