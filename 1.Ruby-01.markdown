@@ -15,7 +15,7 @@
 安裝方式請參考官方網站教學，安裝完後您需要登出再登入 RVM 安裝上去的環境變數才會生效，我們才可以直接於終端機中直接執行 `rvm` 命令。
 
 ### 透過 RVM 安裝 Ruby
-#### 確認 RVM 可用的 Ruby 版本
+#### 1. 確認 RVM 可用的 Ruby 版本
 執行 `$ rvm list known` 命令可以列出所有 RVM 支援的 Ruby 版本，您會發現 Ruby 有非常多不同的實作，其中 Matz's Ruby Interpreter(MRI Ruby) 為 Ruby 程式語言創作者松本行弘(Yukihiro “Matz” Matsumoto)所開發，於本教學中我們將會使用此 Ruby 實作。
 
 ```bash
@@ -36,11 +36,16 @@ ruby-head
 （下方省略）
 ```
 
-#### 安裝 Ruby
+**注意：**`rvm list known` 命令中列出的最新版本未必是上游的最新版本。MRI 版最新的版本請參考 <https://www.ruby-lang.org/zh_tw/downloads/> 的說明。
 
-#### 設定預設 Ruby 版本
+#### 2. 安裝 Ruby
+執行 `$ rvm install 〈Ruby 版本〉` 來安裝指定的 Ruby 版本。
 
-#### 確認目前作用中的 Ruby 版本是你要的版本
+於一般狀況下，RVM 會下載該 Ruby 版本的來源程式碼(source code)，建構 Ruby 好之後將其安裝到家目錄底下的 `.rvm/bin` 目錄中，如果建構 Ruby 需要的軟體尚未安裝的話會跟您提示輸入您的密碼將這些軟體先安裝到系統中。
+
+
+#### 3. 確認目前作用中的 Ruby 版本是你要的版本
+執行 `$ ruby --version`
 
 ### 安裝 [Awesome Print](https://github.com/michaeldv/awesome_print)（建議）
 Awesome Print 是一個可以將 Ruby 物件用美觀的方式印出的程式庫，安裝完後於程式中執行 `require "awesome_print"` 即可以用 `ap()` 來取代 `puts()` 或 `pp()` 印出任何 Ruby 物件。
