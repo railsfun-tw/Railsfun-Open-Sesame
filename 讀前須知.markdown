@@ -29,4 +29,7 @@ $ ruby 〈程式碼檔案名稱〉
 $ ruby program.ruby
 ```
 
+## 本章參考資料<br />Reference Data
+* [Quotation mark - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Quotation_mark)
+
 {% endblock %}
