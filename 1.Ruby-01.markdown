@@ -1,14 +1,19 @@
 {% extends "Page design/Inner page.template.markdown" %}
 
 {% block page_content %}
-# Ruby-01 
+# Ruby-01
+
+<!-- toc -->
+
 ## 0. 準備環境
-### 透過 [Ruby Version Manager (RVM)](https://rvm.io/) 安裝 Ruby（本教學僅支援此安裝方式安裝的 Ruby）
+### 安裝 [Ruby Version Manager (RVM)](https://rvm.io/) （本教學僅支援此安裝方式安裝的 Ruby）
 雖然說安裝 Ruby 有很多種方式，不過使用 Ruby Version Manager (RVM) 來安裝 Ruby（以及之後會用到的 Rails）有下列好處：
 
 * 可以選擇想要安裝的版本
 
-安裝方式請參考官方網站教學，安裝完後您需要登出再登入使用者後 RVM 安裝上去的環境變數才會生效，我們才可以直接於終端機中直接執行 `rvm` 、`ruby`、`irb` 等命令。
+安裝方式請參考官方網站教學，安裝完後您需要登出再登入 RVM 安裝上去的環境變數才會生效，我們才可以直接於終端機中直接執行 `rvm` 命令。
+
+### 透過 RVM 安裝 Ruby
 
 ### 安裝 [Awesome Print](https://github.com/michaeldv/awesome_print)（建議）
 Awesome Print 是一個可以將 Ruby 物件用美觀的方式印出的程式庫，安裝完後於程式中執行 `require "awesome_print"` 即可以用 `ap()` 來取代 `puts()` 或 `pp()` 印出任何 Ruby 物件。
@@ -59,5 +64,6 @@ ap nil.class #=> NilClass
 #任何東西都可以這樣用
 `````
 
+## 參考資料<br />Reference Data
 
 {% endblock %}
