@@ -10,10 +10,36 @@
 雖然說安裝 Ruby 有很多種方式，不過使用 Ruby Version Manager (RVM) 來安裝 Ruby（以及之後會用到的 Rails）有下列好處：
 
 * 可以選擇想要安裝的版本
+* （待補）
 
 安裝方式請參考官方網站教學，安裝完後您需要登出再登入 RVM 安裝上去的環境變數才會生效，我們才可以直接於終端機中直接執行 `rvm` 命令。
 
 ### 透過 RVM 安裝 Ruby
+#### 確認 RVM 可用的 Ruby 版本
+執行 `$ rvm list known` 命令可以列出所有 RVM 支援的 Ruby 版本，您會發現 Ruby 有非常多不同的實作，其中 Matz's Ruby Interpreter(MRI Ruby) 為 Ruby 程式語言創作者松本行弘(Yukihiro “Matz” Matsumoto)所開發，於本教學中我們將會使用此 Ruby 實作。
+
+```bash
+$ rvm list known
+# MRI Rubies
+[ruby-]1.8.6[-p420]
+[ruby-]1.8.7[-head] # security released on head
+[ruby-]1.9.1[-p431]
+[ruby-]1.9.2[-p330]
+[ruby-]1.9.3[-p551]
+[ruby-]2.0.0[-p643]
+[ruby-]2.1.4
+[ruby-]2.1[.5]
+[ruby-]2.2[.1]
+[ruby-]2.2-head
+ruby-head
+
+```
+
+#### 安裝 Ruby
+
+#### 設定預設 Ruby 版本
+
+#### 確認目前作用中的 Ruby 版本是你要的版本
 
 ### 安裝 [Awesome Print](https://github.com/michaeldv/awesome_print)（建議）
 Awesome Print 是一個可以將 Ruby 物件用美觀的方式印出的程式庫，安裝完後於程式中執行 `require "awesome_print"` 即可以用 `ap()` 來取代 `puts()` 或 `pp()` 印出任何 Ruby 物件。
@@ -65,5 +91,8 @@ ap nil.class #=> NilClass
 `````
 
 ## 參考資料<br />Reference Data
+* [RVM: Ruby Version Manager - './install' - Installing RVM.](https://rvm.io/rubies/installing)
+* [關於 Ruby](https://www.ruby-lang.org/zh_tw/about/)
+* [Ruby MRI - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Ruby_MRI)
 
 {% endblock %}
