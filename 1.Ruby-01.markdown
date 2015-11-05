@@ -33,6 +33,7 @@ $ rvm list known
 [ruby-]2.2-head
 ruby-head
 
+（下方省略）
 ```
 
 #### 安裝 Ruby
