@@ -43,8 +43,10 @@ ruby-head
 
 於一般狀況下，RVM 會下載該 Ruby 版本的來源程式碼(source code)，建構 Ruby 好之後將其安裝到家目錄底下的 `.rvm/bin` 目錄中，如果建構 Ruby 需要的軟體尚未安裝的話會跟您提示輸入您的密碼將這些軟體先安裝到系統中。
 
-#### 3. 確認目前作用中的 Ruby 版本是你要的版本
-執行 `$ ruby --version`
+#### 3. 確認目前作用中的 Ruby 版本是你安裝的版本
+* 執行 `$ ruby --version` 來察看目前作用中的 Ruby 版本。
+* 執行 `$ which ruby` 來察看 `ruby` 命令會執行的可執行檔(executable)路徑，如果路徑是 `/usr/.../bin/ruby` 代表這是系統所安裝的 Ruby 而**不是** RVM 安裝的 Ruby，正確的路徑應為 `〈家目錄〉/.rvm/rubies/ruby-〈Ruby 版本〉/bin/ruby`。
+
 
 ### 安裝 [Awesome Print](https://github.com/michaeldv/awesome_print)（建議）
 Awesome Print 是一個可以將 Ruby 物件用美觀的方式印出的程式庫，安裝完後於程式中執行 `require "awesome_print"` 即可以用 `ap()` 來取代 `puts()` 或 `pp()` 印出任何 Ruby 物件。
