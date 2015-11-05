@@ -31,6 +31,7 @@ $ ruby program.ruby
 ```sh
 ［使用者名稱］ ［其他資訊，如主機名稱(hostname)與當前工作目錄(current working directory)］ 〈命令列提示字元〉
 ```
+![](擷取選取區域_001.png)
 
 您輸入的命令(command)會顯示在命令列提示後面，按下 `Enter` 鍵就可以執行該命令
 
