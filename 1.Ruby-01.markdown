@@ -41,6 +41,11 @@ Awesome Print 是一個可以將 Ruby 物件用美觀的方式印出的程式庫
 `````
 
 ## 1. {irb} 開宗明義
+### 你***不應該***使用 Microsoft Windows 作業系統寫 Ruby
+* 原因
+    * 很多 Ruby 的程式庫都只相容 GNU/Linux 作業系統（而且有的還需要建構原生(native)語言(C...)的程式），於 Windows 上要使用這些程式庫是比較困難的。
+    * 效能問題（內容待補）
+
 ### Ruby 內皆為物件，無基本型別，包含 Nil
 不像 Java 有基本型別(Int/Float/...)，Ruby 所有的東西都是物件
 
