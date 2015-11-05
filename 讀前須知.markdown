@@ -5,11 +5,6 @@
 
 <!-- TOC -->
 
-## 命令列提示字元<br />Command-Line Prompt Character
-* 命令列提示字元若為 `$` 代表該命令為以**一般使用者**的身份執行，**如果命令沒有正常運作只代表有某些地方出錯了，請勿嘗試以 `root` 身份執行**。
-* 命令列提示字元若為 `#` 代表該命令為以 `root` 使用者的身份執行，通常是會變更系統的操作會用到此類命令。
-* 命令列提示字元若為 `?` 代表執行該命令要使用的身份根據您的環境配置而有所不同，請查明使用方式之後再使用。
-
 ## 標註方式說明<br />Notations
 ### 必填／選填項目
 * 以「半形角括號(angle brackets)（例：『<』、『>』）」、「全形角括號（例：『〈』、『〉』）」括住的內容為必填項目
@@ -28,6 +23,21 @@ $ ruby 〈程式碼檔案名稱〉
 ```bash
 $ ruby program.ruby
 ```
+
+## 命令列介面<br />Command Line Interface
+### 命令列提示<br />Command Line Prompt
+一般來說命令列提示通常像這樣：
+
+```sh
+［使用者名稱］ ［其他資訊，如主機名稱(hostname)與當前工作目錄(current working directory)］ 〈命令列提示字元〉
+```
+
+您輸入的命令(command)會顯示在命令列提示後面，按下 `Enter` 鍵就可以執行該命令
+
+### 命令列提示字元<br />Command-Line Prompt Character
+* 命令列提示字元若為 `$` 代表該命令為以**一般使用者**的身份執行，**如果命令沒有正常運作只代表有某些地方出錯了，請勿嘗試以 `root` 身份執行**。
+* 命令列提示字元若為 `#` 代表該命令為以 `root` 使用者的身份執行，通常是會變更系統的操作會用到此類命令。
+* 命令列提示字元若為 `?` 代表執行該命令要使用的身份根據您的環境配置而有所不同，請查明使用方式之後再使用。
 
 ## 本章參考資料<br />Reference Data
 * [Quotation mark - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Quotation_mark)
