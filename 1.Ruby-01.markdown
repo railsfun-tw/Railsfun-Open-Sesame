@@ -163,51 +163,7 @@ Gem 的參考文件請參考該 Gem 的官方網站，大部份都會寫在該 G
     [ 8]                          ^(arg1)             NilClass
     [ 9]                     __id__()                 NilClass (BasicObject)
     [10]                   __send__(*arg1)            NilClass (BasicObject)
-    [11]                         ai(*options)         NilClass (Kernel)
-    [12]            awesome_inspect(*options)         NilClass (Kernel)
-    [13]              awesome_print(object, *options) NilClass (Kernel)
-    [14]                      class()                 NilClass (Kernel)
-    [15]                      clone()                 NilClass (Kernel)
-    [16]    define_singleton_method(*arg1)            NilClass (Kernel)
-    [17]                    display(*arg1)            NilClass (Kernel)
-    [18]                        dup()                 NilClass (Kernel)
-    [19]                   enum_for(*arg1)            NilClass (Kernel)
-    [20]                       eql?(arg1)             NilClass (Kernel)
-    [21]                     equal?(arg1)             NilClass (BasicObject)
-    [22]                     extend(*arg1)            NilClass (Kernel)
-    [23]                     freeze()                 NilClass (Kernel)
-    [24]                    frozen?()                 NilClass (Kernel)
-    [25]                       hash()                 NilClass (Kernel)
-    [26]                    inspect()                 NilClass
-    [27]              instance_eval(*arg1)            NilClass (BasicObject)
-    [28]              instance_exec(*arg1)            NilClass (BasicObject)
-    [29]               instance_of?(arg1)             NilClass (Kernel)
-    [30] instance_variable_defined?(arg1)             NilClass (Kernel)
-    [31]      instance_variable_get(arg1)             NilClass (Kernel)
-    [32]      instance_variable_set(arg1, arg2)       NilClass (Kernel)
-    [33]         instance_variables()                 NilClass (Kernel)
-    [34]                      is_a?(arg1)             NilClass (Kernel)
-    [35]                     itself()                 NilClass (Kernel)
-    [36]                   kind_of?(arg1)             NilClass (Kernel)
-    [37]                     method(arg1)             NilClass (Kernel)
-    [38]                    methods(*args)            NilClass (Object)
-    [39]                       nil?()                 NilClass
-    [40]                  object_id()                 NilClass (Kernel)
-    [41]            private_methods(*args)            NilClass (Object)
-    [42]          protected_methods(*args)            NilClass (Object)
-    [43]              public_method(arg1)             NilClass (Kernel)
-    [44]             public_methods(*args)            NilClass (Object)
-    [45]                public_send(*arg1)            NilClass (Kernel)
-    [46]                rationalize(*arg1)            NilClass
-    [47]   remove_instance_variable(arg1)             NilClass (Kernel)
-    [48]                respond_to?(*arg1)            NilClass (Kernel)
-    [49]                       send(*arg1)            NilClass (Kernel)
-    [50]            singleton_class()                 NilClass (Kernel)
-    [51]           singleton_method(arg1)             NilClass (Kernel)
-    [52]          singleton_methods(*args)            NilClass (Object)
-    [53]                      taint()                 NilClass (Kernel)
-    [54]                   tainted?()                 NilClass (Kernel)
-    [55]                        tap()                 NilClass (Kernel)
+　　　　　（……中間省略……）
     [56]                       to_a()                 NilClass
     [57]                       to_c()                 NilClass
     [58]                    to_enum(*arg1)            NilClass (Kernel)
@@ -225,7 +181,7 @@ Gem 的參考文件請參考該 Gem 的官方網站，大部份都會寫在該 G
  => nil
 ```
 
-`to_*()` 方法為進行類別轉換之用。
+取名為 `to_*()` 方法為類別轉換之用。
 
 
 ### Ruby 內所有的東西皆為物件，無基本資料類型(primitive data type)，包含 Nil
@@ -266,6 +222,8 @@ Float 類別為浮點數，Ruby 的程式語言與Ｃ一樣會有精確度造成
 #### Array 類別－陣列
 跟原生程式語言不同，Ruby 中的陣列為不定長度，不需要事先宣告大小。
 
+##### 標示法
+###### 單維度陣列
 ```ruby
  > ap([0, 1, 2, 3])
 [
@@ -277,7 +235,7 @@ Float 類別為浮點數，Ruby 的程式語言與Ｃ一樣會有精確度造成
  => nil 
 ```
 
-多維陣列的標示法：
+###### 多維度陣列
 ```ruby
  > ap([[00, 01, 02, 03], [10, 11, 12, 13], [20, 21, 22, 23], [30, 31, 32, 33]])
 [
