@@ -93,11 +93,13 @@ Gems 為**第三方**所設計的程式庫，需要手動使用 `gem` 命令來�
 
 您可以自 [The Ruby Toolbox](https://www.ruby-toolbox.com/) 網站找到各種不同用途下可用的 Gem 程式庫
 
+![The Ruby Toolbox 網頁截圖](Resources/Pictures/The%20Ruby%20Toolbox%20pageshot.png)
 
 ## 如何尋求幫助
 ### 查詢參考文件
 #### 標準程式庫
 您可以於  [Ruby-Doc.org](http://ruby-doc.org/) 查詢所有 Ruby 官方的 Core、Std-lib 程式庫的應用程式介面(API)參考資料。
+![Ruby-Doc.org screenshot](Resources/Pictures/Ruby-Doc.org screenshot.png)
 
 #### Gem
 Gem 的參考文件請參考該 Gem 的官方網站，大部份都會寫在該 GEM 的 README 文件中。
@@ -108,6 +110,7 @@ Gem 的參考文件請參考該 Gem 的官方網站，大部份都會寫在該 G
 如果您發現程式庫有軟體缺陷(bug)或是有其他問題您可以到該程式庫的軟體缺陷／議題追蹤系統(bug/issue tracker)建檔一個軟體缺陷報告／議題。
 
 
+![Issue tracker example](Resources/Pictures/Issue tracker example01.png)
 
 ## 1. {irb} 開宗明義
 ### 你***不應該***使用 Microsoft Windows 作業系統寫 Ruby
