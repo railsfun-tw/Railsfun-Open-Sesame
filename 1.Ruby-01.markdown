@@ -53,7 +53,7 @@ ruby-head
 Awesome Print 是一個可以將 Ruby 物件用美觀的方式印出的程式庫，安裝完後於程式中執行 `require "awesome_print"` 即可以用 `ap()` 來取代 `puts()` 或 `pp()` 印出任何的 Ruby 物件。
 
 `````ruby
-> puts [1, 3, 2, [2, 3]]
+> puts([1, 3, 2, [2, 3]])
 1
 3
 2
@@ -118,18 +118,39 @@ Gem 的參考文件請參考該 Gem 的官方網站，大部份都會寫在該 G
     * 很多 Ruby 的程式庫都只相容 GNU/Linux 作業系統（而且有的還需要建構原生(native)語言(C...)的程式），於 Windows 上要使用這些程式庫是比較困難的。
     * 效能問題（內容待補）
 
-### Ruby 內皆為物件，無基本型別，包含 Nil
+### Ruby 內所有的東西皆為物件，無基本型別，包含 Nil
 不像 Java 有基本型別(Int/Float/...)，Ruby 所有的東西都是物件
 
-### X.class，X.methods 的用法
-`````
+在所有 Ruby 類別(class)中有一些方法(method)是共有的，像是 `class()` 跟 `methods()` 這兩個方法。
+
+`class()` 方法會回傳該物件的類別：
+
+```ruby
+ > 123.class()
+ => Fixnum 
+ > 123.123.class()
+ => Float
+ > (123..999).class()
+ => Range
+```
+
+知道類別名稱之後您就可以用先前提到的方式去查詢它的參考文件，您可以找到該類別的所有方法以及使用該方法的教學內容。
+
+`methods()` 方法會回傳包含該物件類別的所有方法的陣列：
+
+```ruby
+ > 0.9.methods()
+ => [:to_s, :inspect, :coerce, :-@, :+, :-, :*, :/, :quo, :fdiv, :%, :modulo, :divmod, :**, :==, :===, :<=>, :>, :>=, :<, :<=, :eql?, :hash, :to_f, :abs, :magnitude, :zero?, :to_i, :to_int, :floor, :ceil, :round, :truncate, :nan?, :infinite?, :finite?, :next_float, :prev_float, :numerator, :denominator, :to_r, :rationalize, :arg, :angle, :phase, :singleton_method_added, :i, :+@, :div, :remainder, :real?, :integer?, :nonzero?, :step, :to_c, :real, :imaginary, :imag, :abs2, :rectangular, :rect, :polar, :conjugate, :conj, :between?, :nil?, :=~, :!~, :class, :singleton_class, :clone, :dup, :itself, :taint, :tainted?, :untaint, :untrust, :untrusted?, :trust, :freeze, :frozen?, :methods, :singleton_methods, :protected_methods, :private_methods, :public_methods, :instance_variables, :instance_variable_get, :instance_variable_set, :instance_variable_defined?, :remove_instance_variable, :instance_of?, :kind_of?, :is_a?, :tap, :send, :public_send, :respond_to?, :extend, :display, :method, :public_method, :singleton_method, :define_singleton_method, :object_id, :to_enum, :enum_for, :equal?, :!, :!=, :instance_eval, :instance_exec, :__send__, :__id__]
+```
+
+```ruby
 require “ap”
 ap 123.methods #=> 可用的列表
 ap 123.class #=> Fixnum #知道class後就可以查doc
 ap true.class #=> TrueClass
 ap nil.class #=> NilClass
 #任何東西都可以這樣用
-`````
+```
 
 ## 參考資料<br />Reference Data
 * [RVM: Ruby Version Manager - './install' - Installing RVM.](https://rvm.io/rubies/installing)
