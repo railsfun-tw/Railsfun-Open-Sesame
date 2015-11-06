@@ -1,6 +1,3 @@
-{% extends "Page design/Inner page.template.markdown" %}
-
-{% block page_content %}
 # Ruby-01
 
 <!-- toc -->
@@ -270,6 +267,8 @@ Float 類別為浮點數，Ruby 的程式語言與Ｃ一樣會有精確度造成
 ```
 
 #### String 類別－字元串列
+##### 標示法
+###### 
 ```ruby
  > "Hello kitty!"
  => "Hello kitty!"
@@ -334,5 +333,3 @@ puts 123 unless false if true unless nil if 1
 * [RVM: Ruby Version Manager - './install' - Installing RVM.](https://rvm.io/rubies/installing)
 * [關於 Ruby](https://www.ruby-lang.org/zh_tw/about/)
 * [Ruby MRI - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Ruby_MRI)
-
-{% endblock %}
