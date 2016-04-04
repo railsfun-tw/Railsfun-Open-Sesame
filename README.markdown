@@ -3,7 +3,7 @@
 這是由Ｖ字龍所發起的非官方的 RailsFun 教學課程的 [GitBook](https://www.gitbook.com) 講義，[RailsFun](http://railsfun.tw) 為由 JokerCatz 發起的 RubyOnRails 社群。
 
 ## 智慧財產授權條款<br />Intellectual Property License
-本智慧財產以 [Do What The Fuck You Want To Public License (WTFPL) 授權條款](http://www.wtfpl.net/about/)釋出供所有人自由使用。
+本書以 [Do What The Fuck You Want To Public License (WTFPL) 智慧財產授權條款](http://www.wtfpl.net/about/)釋出供所有人自由使用。
 
 ``````````````````````````````````````````````````````````
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
