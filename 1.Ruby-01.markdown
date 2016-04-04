@@ -46,8 +46,30 @@ ruby-head
 
 安裝完 Ruby 之後您應可以存取 `ruby`、`irb`、`gem` 等命令。
 
-### 安裝 [Awesome Print](https://github.com/michaeldv/awesome_print)（建議）
-Awesome Print 是一個可以將 Ruby 物件用美觀的方式印出的程式庫，安裝完後於程式中執行 `require "awesome_print"` 即可以用 `ap()` 來取代 `puts()` 或 `pp()` 印出任何的 Ruby 物件。
+### `irb` 使用簡介
+`irb` 為 Ruby 的互動式 shell（殼層）環境，執行 `irb` 後您就可以在裏面一行一行執行 Ruby 語言的語句，`irb` 把它執行之後將輸出的訊息印出來（如果有）並印出回傳值，很適合拿來練習寫 Ruby 程式。
+
+```ruby
+$ irb
+irb(main):001:0> 1 + 1
+2
+irb(main):002:0> def t(x)
+irb(main):003:1> x+1
+irb(main):004:1> end
+=> nil
+irb(main):005:0> t(3)
+=> 4
+irb(main):006:0> if t(3) == 4
+irb(main):007:1> p :ok
+irb(main):008:1> end
+:ok
+=> :ok
+irb(main):009:0> quit # 執行 quit()
+$ # irb 結束，回到原來的 shell 環境
+```
+
+### 安裝 Awesome Print（建議）
+[Awesome Print](https://github.com/michaeldv/awesome_print) 是一個可以將 Ruby 物件用美觀的方式印出的第三方程式庫，安裝完後於程式中執行 `require "awesome_print"` 即可以用 `ap()` 來取代 `puts()` 或 `pp()` 方法(method)印出任何的 Ruby 物件。
 
 `````ruby
 irb> puts([1, 3, 2, [2, 3]])
@@ -58,7 +80,11 @@ irb> puts([1, 3, 2, [2, 3]])
 3
  => nil 
 
-> ap [1, 3, 2, [2, 3]]
+irb> pp([1, 3, 2, [2, 3]])
+[1, 3, 2, [2, 3]]
+=> [1, 3, 2, [2, 3]]
+
+irb> ap([1, 3, 2, [2, 3]])
 [
     [0] 1,
     [1] 3,
