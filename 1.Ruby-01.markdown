@@ -44,13 +44,13 @@ ruby-head
 * 執行 `$ ruby --version` 來察看目前作用中的 Ruby 版本。
 * 執行 `$ which ruby` 來察看 `ruby` 命令會執行的可執行檔(executable)路徑，如果路徑是 `/usr/.../bin/ruby` 代表這是系統所安裝的 Ruby 而**不是** RVM 安裝的 Ruby，正確的路徑應為 `〈家目錄〉/.rvm/rubies/ruby-〈Ruby 版本〉/bin/ruby`。
 
-安裝完 Ruby 之後您應可以存取 `ruby`、`irb`、`gem` 命令。
+安裝完 Ruby 之後您應可以存取 `ruby`、`irb`、`gem` 等命令。
 
 ### 安裝 [Awesome Print](https://github.com/michaeldv/awesome_print)（建議）
 Awesome Print 是一個可以將 Ruby 物件用美觀的方式印出的程式庫，安裝完後於程式中執行 `require "awesome_print"` 即可以用 `ap()` 來取代 `puts()` 或 `pp()` 印出任何的 Ruby 物件。
 
 `````ruby
-> puts([1, 3, 2, [2, 3]])
+irb> puts([1, 3, 2, [2, 3]])
 1
 3
 2
