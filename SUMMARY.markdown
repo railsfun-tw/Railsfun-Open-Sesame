@@ -1,4 +1,4 @@
-# 內容大綱
+# 內容大綱<br />Table of Contents
 
 1. [RailsFun! 芝麻開門！](README.markdown)
   1. [讀前須知](讀前須知.markdown)
