@@ -7,3 +7,4 @@
 	* [開宗明義](1.Ruby-01/開宗明義/README.markdown)
 	* [程式庫分類](1.Ruby-01/程式庫分類/README.markdown)
 	* [如何尋求幫助](1.Ruby-01/如何尋求幫助/README.markdown)
+	* [基本類別介紹](1.Ruby-01/基本類別介紹/README.markdown)
