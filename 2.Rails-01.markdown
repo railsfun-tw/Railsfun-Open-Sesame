@@ -1,0 +1,25 @@
+# 2.Rails-01
+## Routes
+* `$ rake routes`
+* form_for()
+* Rails 的紀錄檔會紀錄 HTTP request 以及它的參數（有參數過濾功能）
+
+### RESTful
+* 規範只支援 GET、POST，其他的支援要依賴 jquery_ujs
+
+## 使用自己的程式庫
+* 變更程式庫需重新啟動 Rails
+
+## 基本 gem 介紹
+### will_paginate -  分割頁面
+
+### paperclip - 圖片（附件？）上傳
+
+### devise - 權限控管
+
+### simple_captcha
+
+## FormHelper
+
+## 攻擊與防護
+### Rails 預設支援的防護
